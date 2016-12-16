@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Posts</h1>
+
+    <form name="posts" action="/new" method="POST">
+      <div class="textbox">
+        <input
+          type="text"
+          required
+          name="post-title"/>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>post title</label>
+      </div>
+
+    <div class="textbox">
+      <input
+        type="text"
+        required
+        name="post-text"/>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>post text</label>
+    </div>
+
+
+    <label>author</label> <input type="text" name="author-name">
+    <select name="select">
+      <option value="female" selected>female</option>
+      <option value="male">male</option>
+    </select>
+    <button>submit</button>
+    </form>
+
+    <div class="content">
+      <ul class="post-list"></ul>
+    </div>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
